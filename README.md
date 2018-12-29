@@ -46,3 +46,6 @@ extension UIView {
     }
 }
 ```
+
+
+#### 🌟If you find it helpful, give me a star🌟
