@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="InitViewFromXibSampler" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="HkX-bu-PCB" id="OUl-b3-SbC"/>
+                <outlet property="underView" destination="3Nk-as-SmU" id="9Pv-y0-pkm"/>
+                <outlet property="view" destination="iN0-l3-epB" id="1dl-yM-OfH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="coI-tS-Esb">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkX-bu-PCB">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Nk-as-SmU">
+                            <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3Nk-as-SmU" firstAttribute="height" secondItem="coI-tS-Esb" secondAttribute="height" multiplier="0.5" id="p7q-65-Gbd"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="coI-tS-Esb" secondAttribute="bottom" id="TR3-tO-Ids"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="coI-tS-Esb" secondAttribute="trailing" id="VNC-WE-poo"/>
+                <constraint firstItem="coI-tS-Esb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bTC-CH-MN0"/>
+                <constraint firstItem="coI-tS-Esb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="rf9-b5-BL6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
