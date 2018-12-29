@@ -1,7 +1,7 @@
 # InitViewFromXibSampler
 Sample UIView init(viewModel:) from xib.
 
-#### Use UIViewController.init(viewModel:) from Xib.
+#### How to use UIViewController.init(viewModel:) from Xib.
 
 ```swift
 final class MainViewController: UIViewController {
@@ -19,7 +19,7 @@ final class MainViewController: UIViewController {
 }
 ```
 
-#### Use UIView.init(viewModel:) from Xib.
+#### How to use UIView.init(viewModel:) from Xib.
 
 ```swift
 final class InsideView: UIView {
